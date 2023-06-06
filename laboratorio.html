@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="/css/styleAjax.css">
+    
+    <title>Laboratorio</title>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand"  aria-current="page" href="index.html">Inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Sobre mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="laboratorio.html">Laboratorio</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <h1>Ejercicios Laboratorios</h1>
+    <div class="container-fluid">
+        <h3>Verificar Palíndromo</h3>
+        <label for="inputString">Ingresa una cadena para verificar si es un palíndromo:</label>
+        <input type="text" id="inputString">
+        <button id="btnpalin">Verificar</button>
+        <p id="result1"> </p>
+        
+        <br>
+        
+        <h3>Ingresa dos números para comparar:</h3>
+        <label for="numero1">Número 1:</label>
+        <input type="text" id="numero1"><br>
+        <label for="numero2">Número 2:</label>
+        <input type="text" id="numero2"><br>
+        <button id="btnMayor">Comparar</button>
+        <p id="resultado"></p>
+        
+        <br>
+
+        <h3>Vocales en una Frase</h3>
+        <label for="inputPhrase">Ingresa una frase para obtener las vocales:</label>
+        <input type="text" id="inputPhrase"><br>
+        <button id="btnvoca">Obtener Vocales</button>
+        <p id="resultadovocal"></p>
+
+        <br>
+
+        <h3>Contador de Vocales</h3>
+        <label for="ContFrase">Ingresa una frase para obtener las vocales:</label>
+        <input type="text" id="ContFrase"><br>
+        <button id="btncontar" onclick="countVowels()">Contar Vocales</button>
+        <p id="result"></p>
+
+    </div>
+
+    <h1>Ejercicios ajax</h1>
+    <form action="#">
+        <label for="recurso"> URL:</label>
+        <input type="text" id="recurso" size="70" />
+        <input type="button" id="enviar" value="Mostrar contenidos" />
+      </form>
+      <h2>% Completado:</h2>
+        <span id="display"></span>
+        <progress id="progress-bar" value=0></progress>
+    
+        <br>
+        
+      <div id="principal">
+        <h2>Contenidos del archivo:</h2>
+        <div id="contenidos"></div>
+    
+        <h2>Cabeceras HTTP de la respuesta del servidor:</h2>
+        <div id="cabeceras"></div>
+      </div>
+    
+      <div id="secundario">
+        <h2>Estados de la petición:</h2>
+        <div id="estados"></div>
+    
+        <h2>Código de estado:</h2>
+        <div id="codigo"></div>
+      </div>
+    
+
+     <script src="/js/espalindromo.js"></script>
+     <script src="/js/MayorQue.js"></script>
+     <script src="/js/contvocal.js"></script>
+     <script src="/js/Vocales.js"></script>
+     <script src="/js/ajax1.js"></script>
+    <!-- BOOTSTRAP JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
