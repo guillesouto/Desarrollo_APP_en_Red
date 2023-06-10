@@ -1,7 +1,11 @@
+
 window.addEventListener('load', loadPage);
 let recurso     = document.getElementById('recurso'),
     btnSubmit   = document.querySelector('#enviar'),
     contenidos  = document.querySelector('#contenidos'),
+    cabeceras   = document.getElementById('cabeceras'),
+    estados     = document.getElementById('estados'),
+    codigo      = document.getElementById('codigo'),
     progressBar = document.querySelector('#progress-bar'),
     display     = document.querySelector('#display'),
     request     = new XMLHttpRequest();
